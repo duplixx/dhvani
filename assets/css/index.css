@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+#ball1{
+  animation: ball1 15s infinite;
+  transition-timing-function: ease-in-out;
+}
+#ball2{
+  animation: ball2 10s infinite;
+  margin-left: 2%;
+  transition-timing-function: ease-in-out;
+}
+#ball3{
+  animation: ball3 10s infinite;
+  transition-timing-function: ease-in-out;
+}
+@keyframes ball1 {
+  from {
+    margin-left: 2%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 5%;
+    width: 100%;
+  }
+}
+@keyframes ball2 {
+  from {
+    margin-top: 8%;
+  }
+
+  to {
+    margin-top: 1%;
+  }
+}
+@keyframes ball3 {
+  from {
+    margin-left: 1%;
+  }
+
+  to {
+    margin-left: 10%;
+  }
+}
