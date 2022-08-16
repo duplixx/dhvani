@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-<body>
+<body class="overflow-x-hidden">
     <div class="hero min-h-screen" style="background-image: url(./assets/img/herobg.png);">
         <div class="hero-overlay"></div>
         <!-- <div id="navbar"><ul><li></li><li></li><li></li><li></li><li></li></ul></div> -->
@@ -181,8 +180,11 @@
                 belogi. FAR paratyp i muvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde. </p>
         </div>
 
-        <div class="flex items-center justify-center text-center">
-            <ul class="flex space-x-6 flex-row">
+        <div class="grid grid-cols-[auto_min-content_auto]">
+            
+            <div class="grid grid-cols-2 bg-orange-600 w-[95%] rounded-tr-full"></div>
+            
+            <ul class="flex col-start-2 col-end-3 place-self-center space-x-6 flex-row">
                 <!-- <div class="w-full"><img src="./assets/img/footer-rect1.svg" class="w-full" alt=""></div> -->
                 <a href="">
                     <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
@@ -198,8 +200,11 @@
                 </a>
                 <!-- <div class="w-full"><img src="./assets/img/footer-rect2.svg" class="" alt=""></div> -->
             </ul>
+            
+            <div class="grid grid-cols-2 bg-orange-600 w-[95%] justify-self-end rounded-tl-full"></div>
+            
         </div>
-        <div>
+        <div class="z-10">
             <h1 class="flex items-center justify-center bg-white text-black md:p-4 font-bold md:text-2xl">Made with ❤️
                 by Indian Dexters</h1>
         </div>
