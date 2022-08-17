@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="assets/img/Ellipse 34.svg">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./assets/js/index.js"></script>
 </head>
 
 <body>
@@ -92,6 +90,16 @@
             <div class="absolute animate__animated animate__bounce" id="ball5"><img src="./assets/img/particles/ball2.svg" alt=""></div>
             <div class="absolute" id="ball6"><img src="./assets/img/particles/Ellipse 26.svg" alt=""></div>
         </div> -->
+        <div class="flex w-full justify-end">
+            <img   class="absolute right-0 rotate-180"  src="./assets/img/Ellipse 32.svg" alt="">
+            <img   class="absolute right-0 w-[4%] mr-[80px]"  src="./assets/img/Ellipse 33.svg" alt="">
+            <img   class="absolute right-0 mt-[40px] mr-[150px]"  src="./assets/img/Ellipse 34.svg" alt="">
+        </div>
+        <div class="flex w-full justify-start mt-8">
+            <img   class="absolute left-0 "  src="./assets/img/Ellipse 32.svg" alt="">
+            <img   class="absolute left-0 w-[4%] ml-[70px]"  src="./assets/img/Ellipse 33.svg" alt="">
+            <img   class="absolute left-0 mt-[60px] ml-[140px]"  src="./assets/img/Ellipse 34.svg" alt="">
+        </div>
         <div class="flex justify-center mt-[20px] ">
             <div class="animate__animated animate__fadeInLeft">
                 <h1 class="text-2xl text-gray-600 text-wrap text-center font-extrabold mt-10">Translates Madhya Pradesh
@@ -126,9 +134,50 @@
         <div class="tooltip tooltip-info" data-tip="click to test"><label type="button" for="my-modal-3" class=" modal-button w-full p-0 "><img src="./assets/img/mic.svg"   class="tooltip w-[800px] active:invert delay-75 hover:cursor-pointer" alt=""></label></div>
         <input type="checkbox" id="my-modal-3" class="modal-toggle" />
             <div class="modal">
-              <div class="modal-box flex">
-                <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                
+              <div class=" flex modal-box w-11/12 max-w-5xl">
+                <div class="lang-container ">
+                    <div class="inner-lang-container">
+            
+                        <div class="_side">
+                            <div class="detect-lang">
+                                <select name="lang" id="lang">
+                                    <option value="#">Detected Languages</option>
+                                    <option value="hindi">hindi</option>
+                                    <option value="english">english</option>
+                                    <option value="spanish">spanish</option>
+                                </select>
+                            </div>
+                            <div class="detect-area">
+                                <textarea class="left-detect-area" name="text-area" id="detect-area" cols="30" rows="10" placeholder="मैं एक समस्या में हूँ कृपया मेरी मदद कर"></textarea>
+                                <img src="speaker-icon.png" alt="" class="speaker-icon">
+                            </div>
+                        </div>
+                        <div class="swap-icon" class="">
+                            <div>
+                                <img src="./assets/img/cross.svg"  alt="">
+                            </div>
+                        </div>
+                        <div class="_side">
+                            <div class="detect-lang">
+                                <select name="lang" id="lang">
+                                    <option value="#">Understandable Languages</option>
+                                    <option value="hindi">hindi</option>
+                                    <option value="english">english</option>
+                                    <option value="spanish">spanish</option>
+                                </select>
+                            </div>
+                            <div class="detect-area">
+                                <textarea class="right-detect-area" name="detext-area" id="detect-area" cols="30" rows="10" placeholder="I am in a problem please help me..."></textarea>
+                                <img src="speaker-icon.png" alt="" class="speaker-icon">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- <div class="flex justify-center " >
+                        <label type="button" for="" class=""><img src="./assets/img/smallmic.svg" alt="" class="w-[142px] h-[142px]"></label>
+                    </div> -->
+                </div>
+                <label for="my-modal-3" class="btn btn-md  right-0 top-0 h-[500px] w-10 bg-gray-500 hover:bg-gray-500"><span class="rotate-90">CLOSE</span>✕</label>
               </div>
             </div>
     </div>

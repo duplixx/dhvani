@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./assets/js/index.js"></script>
 </head>
 
 <body>
@@ -56,24 +58,23 @@
                         </a>
                     </li>
                     <li><a>Watch a Demo</a></li>
-                    <li><a>About</a></li>
                     <li><a>Contact</a></li>
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn">Get started</a>
+                <a class="btn bg-gradient-to-t from-orange-600 to-orange-400 text-white font-lg">Test Our Software</a>
             </div>
         </div>
-        <h1 class="text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-t from-orange-700 to-orange-400">
+        <h1 data-aos="fade-up" class="text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-t from-orange-700 to-orange-400">
             About</h1>
     </div>
     </div>
     </div>
-    <div class="bg-white flex-row justify-center items-center text-black space-y-5">
+    <div class="bg-white flex-row justify-center items-center text-black space-y-8">
         <h1 class="text-3xl font-black text-center pt-12">What is <span class="text-orange-500">Dhvani</span> ?</h1>
         <div class="flex justify-evenly  px-[200px] pt-[80px]">
-            <div><img src="./assets/img/about/learning.svg" alt=""></div>
-            <div class="text-wrap w-[495px] h-[365px] text-left text-xl">
+            <div data-aos="fade-right"><img src="./assets/img/about/learning.svg" alt=""></div>
+            <div data-aos="fade-left" class="text-wrap w-[495px] h-[365px] text-left text-xl">
                 <p>We are no superheros but still can manage to give you accurate services We are no superheros but
                     still can manage to give you accurate services We are no superheros but still can manage to give you
                     accurate services We are no superheros but still can manage to give you accurate services We are no
@@ -84,7 +85,8 @@
         </div>
         <h1 class="text-3xl font-bold text-center pt-8">Scope of <span class="text-orange-500">Dhvani</span></h1>
         <div class="flex justify-center items-center p-8 px-[200px]">
-            <div class="text-wrap text-center text-xl w-[995px]">
+            <div class="text-wrap text-center text-xl w-[995px]" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <p>We are no superheros but still can manage to give you accurate services We are no superheros but
                     still can manage to give you accurate services We are no superheros but still can manage to give you
                     accurate services We are no superheros but still can manage to give you accurate services We are no
@@ -105,7 +107,12 @@
 
         </div>
         <div class="grid grid-cols-3 gap-x-12 gap-y-8 px-[200px] pt-8">
-            <div class="card w-[300px] h-[360px] shadow-2xl ">
+            <div class="absolute left-0 w-full">
+                <img   class=""  src="./assets/img/Ellipse 32.svg" alt="">
+                <img   class="ml-[100px]"  src="./assets/img/Ellipse 33.svg" alt="">
+                <img   class="ml-[100px] -mt-[208px]"  src="./assets/img/Ellipse 34.svg" alt="">
+            </div>
+            <div class="card w-[300px] h-[360px] shadow-2xl " data-aos="flip-left">
                 <figure class="content-cover"><img src="./assets/img/about/card1.svg" alt="Shoes" /></figure>
                 <div class="absolute bottom-0 w-full">
                     <div class="flex justify-between">
@@ -116,64 +123,72 @@
 
                 </div>
             </div>
-            <div class="card w-[300px] h-[360px] shadow-2xl ">
-                <figure class="content-cover"><img src="./assets/img/about/card1.svg" alt="Shoes" /></figure>
+            <div class="card w-[300px] h-[360px] shadow-2xl " data-aos="zoom-in">
+                <figure class="content-cover"><img src="./assets/img/about/card1.svg" alt="dolly" /></figure>
                 <div class="absolute bottom-0 w-full">
                     <div class="flex justify-between">
                         <div><img src="./assets/img/about/title.svg" alt=""></div>
-                        <h1 class="absolute text-white font-semibold left-4 bottom-3">Shyam Sunder <br>Singh</h1>
+                        <h1 class="absolute text-white font-semibold left-4 bottom-[18px] text-lg">Ananya Goswami</h1>
                         <img src="./assets/img/about/speaker.svg" alt="">
                     </div>
 
                 </div>
             </div>
-            <div class="card w-[300px] h-[360px] shadow-xl ">
-                <figure class="content-cover"><img src="./assets/img/about/card1.svg" alt="Shoes" /></figure>
+            <div class="card w-[300px] h-[360px] shadow-xl " data-aos="flip-right">
+                <figure class="content-cover"><img src="./assets/img/about/zamir.svg" alt="Shoes" /></figure>
                 <div class="absolute bottom-0 w-full">
                     <div class="flex justify-between">
                         <div><img src="./assets/img/about/title.svg" alt=""></div>
-                        <h1 class="absolute text-white font-semibold left-4 bottom-3">Shyam Sunder <br>Singh</h1>
+                        <h1 class="absolute text-white font-semibold left-4 bottom-[18px] text-lg">Ziyauddin Zamir</h1>
                         <img src="./assets/img/about/speaker.svg" alt="">
                     </div>
 
                 </div>
             </div>
-            <div class="card w-[300px] h-[360px] shadow-xl ">
-                <figure class="content-cover"><img src="./assets/img/about/card1.svg" alt="Shoes" /></figure>
+            <div class="card w-[300px] h-[360px] shadow-xl " data-aos="flip-left">
+                <figure class="content-cover"><img src="./assets/img/about/me.svg" alt="Shoes" /></figure>
                 <div class="absolute bottom-0 w-full">
                     <div class="flex justify-between">
                         <div><img src="./assets/img/about/title.svg" alt=""></div>
-                        <h1 class="absolute text-white font-semibold left-4 bottom-3">Shyam Sunder <br>Singh</h1>
+                        <h1 class="absolute text-white font-semibold left-4 bottom-[18px] text-lg">Shekhar Patel</h1>
                         <img src="./assets/img/about/speaker.svg" alt="">
                     </div>
 
                 </div>
             </div>
-            <div class="card w-[300px] h-[360px] shadow-xl ">
-                <figure class="content-cover"><img src="./assets/img/about/card1.svg" alt="Shoes" /></figure>
+            <div class="card w-[300px] h-[360px] shadow-xl " data-aos="zoom-in">
+                <figure class="content-cover"><img src="./assets/img/about/shruti.svg" alt="Shoes" /></figure>
                 <div class="absolute bottom-0 w-full">
                     <div class="flex justify-between">
                         <div><img src="./assets/img/about/title.svg" alt=""></div>
-                        <h1 class="absolute text-white font-semibold left-4 bottom-3">Shyam Sunder <br>Singh</h1>
+                        <h1 class="absolute text-white font-semibold left-4 bottom-[18px] text-lg">Shruti Jindal</h1>
                         <img src="./assets/img/about/speaker.svg" alt="">
                     </div>
 
                 </div>
             </div>
-            <div class="card w-[300px] h-[360px] shadow-xl ">
-                <figure class="content-cover"><img src="./assets/img/about/card1.svg" alt="Shoes" /></figure>
+            <div class="card w-[300px] h-[360px] shadow-xl " data-aos="flip-right">
+                <figure class="content-cover"><img src="./assets/img/about/ashu.svg" alt="Shoes" /></figure>
                 <div class="absolute bottom-0 w-full">
                     <div class="flex justify-between">
                         <div><img src="./assets/img/about/title.svg" alt=""></div>
-                        <h1 class="absolute text-white font-semibold left-4 bottom-3">Shyam Sunder <br>Singh</h1>
+                        <h1 class="absolute text-white font-semibold left-4 bottom-[18px] text-lg">Ashutosh Pathak</h1>
                         <img src="./assets/img/about/speaker.svg" alt="">
                     </div>
+
                 </div>
             </div>
+            <div class="flex w-full justify-end">
+                <img   class="absolute right-0 rotate-180"  src="./assets/img/Ellipse 32.svg" alt="">
+                <img   class="absolute right-0 w-[4%] mr-[120px]"  src="./assets/img/Ellipse 33.svg" alt="">
+                <img   class="absolute right-0 -mt-[200px] mr-[150px]"  src="./assets/img/Ellipse 34.svg" alt="">
+            </div>
+            
+            
         </div>
         <h1 class="text-3xl font-black text-center pt-16">Mentors of <span class="text-orange-500">Dhvani</span> ?</h1>
         <div class="grid grid-cols-2 gap-x-2 px-[300px] justify-center py-16">
-            <div class="card w-[300px] h-[360px] shadow-xl ">
+            <div class="card w-[300px] h-[360px] shadow-xl " data-aos="zoom-out">
                 <figure class="content-cover"><img src="./assets/img/about/vinny.svg" alt="Shoes" /></figure>
                 <div class="absolute bottom-0 w-full">
                     <div class="flex justify-between">
@@ -184,12 +199,12 @@
 
                 </div>
             </div>
-            <div class="card w-[300px] h-[360px] shadow-xl ">
-                <figure class="content-cover"><img src="./assets/img/about/vinny.svg" alt="Shoes" /></figure>
+            <div class="card w-[300px] h-[360px] shadow-xl " data-aos="zoom-out">
+                <figure class="content-cover"><img src="./assets/img/about/Deepak.svg" alt="Shoes" /></figure>
                 <div class="absolute bottom-0 w-full">
                     <div class="flex justify-between">
                         <div><img src="./assets/img/about/title.svg" alt=""></div>
-                        <h1 class="absolute text-white font-semibold left-4 bottom-4">Deepak Kumar</h1>
+                        <h1 class="absolute text-white font-semibold left-4 bottom-[18px] text-lg">Deepak Kumar</h1>
                         <img src="./assets/img/about/speaker.svg" alt="">
                     </div>
 
@@ -245,7 +260,7 @@
                 <a href="">
                     <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
                 </a>
-                 
+
             </ul>
             <div class="grid grid-cols-2 bg-orange-400 w-[95%] justify-self-end rounded-tl-full"></div>
         </div>
@@ -254,6 +269,8 @@
                 by Indian Dexters</h1>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
