@@ -11,6 +11,11 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/Ellipse 34.svg">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 
 <body>
@@ -60,8 +65,8 @@
                     <li><a>Contact</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
-                <a class="btn">Get started</a>
+            <div class="navbar-end ">
+                <a class="btn bg-gradient-to-t from-orange-500 to-orange-300 text-white">Test Our Software</a>
             </div>
         </div>
         <div id=" " class="">
@@ -79,39 +84,36 @@
         <div class="flex items-center justify-center">
             <img src="./assets/img/chats.svg" class="img-responsive mt-8 md:max-w-[600px] md:max-h-[640px]" alt="chats" srcset="">
         </div> -->
-        <div class="absolute" id="ball1"><img src="./assets/img/particles/ball1.svg" alt=""></div>
+        <!-- <div class="absolute" id="ball1"><img src="./assets/img/particles/ball1.svg" alt=""></div>
         <div class="absolute" id="ball2"><img src="./assets/img/particles/ball2.svg" alt=""></div>
-        <div class="absolute" id="ball3"><img src="./assets/img/particles/ball3.svg" alt=""></div>
-        <div class="flex justify-end">
-            <div class="absolute" id="ball4"><img src="./assets/img/particles/Ellipse 25.svg" alt=""></div>
-            <div class="absolute" id="ball5"><img src="./assets/img/particles/ball2.svg" alt=""></div>
+        <div class="absolute" id="ball3"><img src="./assets/img/particles/ball3.svg" alt=""></div> -->
+        <!-- <div class="flex justify-end">
+            <div class="animate__animated animate__bounce" id="ball4"><img src="./assets/img/particles/Ellipse 25.svg" alt=""></div>
+            <div class="absolute animate__animated animate__bounce" id="ball5"><img src="./assets/img/particles/ball2.svg" alt=""></div>
             <div class="absolute" id="ball6"><img src="./assets/img/particles/Ellipse 26.svg" alt=""></div>
-        </div>
-        <div class="flex justify-center mt-[60px]">
-            <div>
+        </div> -->
+        <div class="flex justify-center mt-[20px] ">
+            <div class="animate__animated animate__fadeInLeft">
                 <h1 class="text-2xl text-gray-600 text-wrap text-center font-extrabold mt-10">Translates Madhya Pradesh
                     Local<br> Language to Understandable Languages</h1><img src="./assets/img/chats.svg"
                     class="img-responsive mt-8 md:w-[580px]" alt="chats" srcset="" />
             </div>
         </div>
-        <div class="flex justify-end mr-[100px]">
+        <div class="flex justify-between px-[120px] pb-[80px]">
             <div>
                 <h1 class="text-2xl text-gray-600 text-wrap font-extrabold mt-10">Transcribes
                     Local Language to<br> Understandable Language</h1><img src="./assets/img/phone.svg"
                     class="img-responsive mt-8 md:w-[380px]" alt="chats" srcset="" />
             </div>
-        </div>
-        <div class="flex  ml-[260px] pb-[180px]">
-            <div>
-                <h1 class="text-2xl text-gray-600 text-center text-wrap font-extrabold mt-6">Works as an emergency
-                    translator<br>for Police Officials</h1><img src="./assets/img/100.svg"
-                    class="img-responsive mt-8 md:w-[380px]" alt="chats" srcset="" />
+            <div class="flex ml-[180px]">
+                <div>
+                    <h1 class="text-2xl text-gray-600 text-center text-wrap font-extrabold mt-10">Works as an emergency
+                        translator<br>for Police Officials</h1><img src="./assets/img/100.svg"
+                        class="img-responsive mt-8 md:w-[380px]" alt="chats" srcset="" />
+                </div>
             </div>
         </div>
-        <div class="flex items-center justify-center"></div>
-        <div class="flex items-center justify-center"></div>
-        <div class="flex items-center justify-center"></div>
-
+        
     </div>
     <div id="demo_section" class="bg-black min-h-screen flex p-[120px]">
         <div class="relative">
@@ -121,18 +123,14 @@
 
             <div class="absolute top-[80px] -left-10"><img src="./assets/img/ellipse.svg" class="" alt="" /></div>
         </div>
-        <div class=""><img src="./assets/img/mic.svg" class="w-[800px] " alt=""></div>
-        <label for="my-modal-6" class="btn modal-button">open modal</label>
-        <input type="checkbox" id="my-modal-6" class="modal-toggle" />
-        <div class="modal modal-bottom sm:modal-middle">
-          <div class="modal-box">
-            <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
-            <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-            <div class="modal-action">
-              <label for="my-modal-6" class="btn">Yay!</label>
+        <div class="tooltip tooltip-info" data-tip="click to test"><label type="button" for="my-modal-3" class=" modal-button w-full p-0 "><img src="./assets/img/mic.svg"   class="tooltip w-[800px] active:invert delay-75 hover:cursor-pointer" alt=""></label></div>
+        <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box flex">
+                <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                
+              </div>
             </div>
-          </div>
-        </div>
     </div>
     <div id="choose" class=" bg-white">
         <h1 class="text-4xl text-gray-600 text-wrap font-black text-center px-4  pt-12">Why choose <span
@@ -181,8 +179,11 @@
                 belogi. FAR paratyp i muvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde. </p>
         </div>
 
-        <div class="flex items-center justify-center text-center">
-            <ul class="flex space-x-6 flex-row">
+        <div class="grid grid-cols-[auto_min-content_auto]">
+
+            <div class="grid grid-cols-2 bg-orange-400 w-[95%] rounded-tr-full"></div>
+
+            <ul class="flex col-start-2 col-end-3 place-self-center space-x-6 flex-row">
                 <!-- <div class="w-full"><img src="./assets/img/footer-rect1.svg" class="w-full" alt=""></div> -->
                 <a href="">
                     <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
@@ -196,10 +197,11 @@
                 <a href="">
                     <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
                 </a>
-                <!-- <div class="w-full"><img src="./assets/img/footer-rect2.svg" class="" alt=""></div> -->
+                 
             </ul>
+            <div class="grid grid-cols-2 bg-orange-400 w-[95%] justify-self-end rounded-tl-full"></div>
         </div>
-        <div>
+        <div class="z-10">
             <h1 class="flex items-center justify-center bg-white text-black md:p-4 font-bold md:text-2xl">Made with ❤️
                 by Indian Dexters</h1>
         </div>
