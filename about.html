@@ -32,18 +32,15 @@
                     </label>
                     <ul tabindex="0"
                         class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li tabindex="0">
-                            <a class="justify-between">
-                                Parent
-                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24">
-                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                                </svg>
-                            </a>
-
-                        </li>
-                        <li><a>Item 3</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                    <li>
+                        <a href="#illustrations">
+                            Use Cases
+                        </a>
+                    </li>
+                    <li><a href="#demo_section">Watch a Demo</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <a class="btn-ghost normal-case p-3 "><img src="./assets/img/Dhavni Logo.svg" alt="okay"
@@ -63,7 +60,7 @@
                 </ul>
             </div>
             <div class="navbar-end ">
-                <a class="btn bg-gradient-to-t from-orange-500 to-orange-300 text-white" href="#demo_section">Test Our Software</a>
+                <a class="btn bg-gradient-to-t from-orange-500 to-orange-300 text-white" href="./index.html#demo_section">Test Our Software</a>
             </div>
         </div>
         <h1 data-aos="fade-up" class="text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-t from-orange-700 to-orange-400">
@@ -71,11 +68,11 @@
     </div>
     </div>
     </div>
-    <div class="bg-white flex-row justify-center items-center text-black space-y-8">
+    <div class="bg-white flex-row justify-center items-center text-black space-y-8 px-4 overflow-hidden">
         <h1 class="text-3xl font-black text-center pt-12">What is <span class="text-orange-500">Dhvani</span> ?</h1>
-        <div class="flex justify-evenly  px-[200px] pt-[80px]">
-            <div data-aos="fade-right"><img src="./assets/img/about/learning.svg" alt=""></div>
-            <div data-aos="fade-left" class="text-wrap w-[495px] h-[365px] text-left text-xl">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-evenly  md:px-[200px] md:pt-[80px]">
+            <div data-aos="fade-right"><img src="./assets/img/about/learning.svg" class="" alt=""></div>
+            <div data-aos="fade-left" class="text-center text-wrap md:w-[495px] md:h-[365px] text-left text-xl">
                 <p>We are no superheros but still can manage to give you accurate services We are no superheros but
                     still can manage to give you accurate services We are no superheros but still can manage to give you
                     accurate services We are no superheros but still can manage to give you accurate services We are no
@@ -85,7 +82,7 @@
             </div>
         </div>
         <h1 class="text-3xl font-bold text-center pt-8">Scope of <span class="text-orange-500">Dhvani</span></h1>
-        <div class="flex justify-center items-center p-8 px-[200px]">
+        <div class="flex justify-center items-center p-8 md:px-[200px]">
             <div class="text-wrap text-center text-xl w-[995px]" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
                 <p>We are no superheros but still can manage to give you accurate services We are no superheros but
@@ -97,9 +94,9 @@
             </div>
         </div>
     </div>
-    <div id="creators" class="bg-white px-[100px] text-black ">
+    <div id="creators" class="bg-white px-[100px] text-black overflow-hidden">
         <h1 class="text-3xl font-black text-center pt-12">Creators of <span class="text-orange-500">Dhvani</span> ?</h1>
-        <div class="flex justify-center items-center p-8 px-[200px]">
+        <div class="flex justify-center items-center p-8 md:px-[200px]">
             <div class="text-wrap text-center text-xl w-[995px]">
                 <p>We are no superheros but still can manage to give you accurate services We are no superheros but
                     saccurate services We are no superheros but still can manage to give
@@ -180,9 +177,9 @@
                 </div>
             </div>
             <div class="flex w-full justify-end">
-                <img   class="absolute right-0 rotate-180"  src="./assets/img/Ellipse 32.svg" alt="">
+                <img   class="absolute  right-0 rotate-180"  src="./assets/img/Ellipse 32.svg" alt="">
                 <img   class="absolute right-0 w-[4%] mr-[120px]"  src="./assets/img/Ellipse 33.svg" alt="">
-                <img   class="absolute right-0 -mt-[200px] mr-[150px]"  src="./assets/img/Ellipse 34.svg" alt="">
+                <img   class="absolute hidden right-0 -mt-[200px] mr-[150px]"  src="./assets/img/Ellipse 34.svg" alt="">
             </div>
             
             
@@ -215,32 +212,27 @@
         </div>
     </div>
     <footer id="footer" class="bg-black ">
-        <div class="flex items-center justify-center pt-12  ">
+        <div class="flex items-center justify-center pt-12 pb-5">
             <img class="" src="./assets/img/orangelogo.svg" class="w-[40%] h-[40%]  pt-8 " alt="okay">
 
         </div>
-        <div class="flex items-center justify-center m-6 ">
-            <ul class="flex space-x-6">
-                <a href="">
-                    <li>Home</li>
-                </a>
-                <a href="">
-                    <li>Use Cases</li>
-                </a>
-                <a href="">
-                    <li>Watch a Demo</li>
-                </a>
-                <a href="">
-                    <li>About</li>
-                </a>
-                <a href="">
-                    <li>Contact</li>
-                </a>
+        <div class="flex justify-items-center md:m-6 sm:m-0">
+            <ul
+                class="flex justify-items-center justify-between w-[100%] px-[5px] text-sm md:text-xl md:space-x-6 md:justify-center">
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                    <a href="#illustrations">
+                        Use Cases
+                    </a>
+                </li>
+                <li><a href="#demo_section">Watch a Demo</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a>Contact</a></li>
             </ul>
         </div>
-        <div class="flex items-center justify-center text-center m-8 px-[280px] ">
-            <p>Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i
-                belogi. FAR paratyp i muvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde. </p>
+        <div class="flex items-center justify-center text-center m-8 lg:px-[280px] ">
+            <p>Communication is now made easy!
+                Understand the local ethnic languages of Madhya Pradesh by just a voice command!</p>
         </div>
 
         <div class="grid grid-cols-[auto_min-content_auto]">
