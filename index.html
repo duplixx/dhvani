@@ -95,13 +95,13 @@
                     class="img-responsive mt-8 md:w-[580px]" alt="chats" srcset="" />
             </div>
         </div>
-        <div class="flex justify-between px-[120px] pb-[80px]">
+        <div class="flex flex-col md:flex-row justify-center items-center md:justify-between md:px-[120px] md:pb-[80px]">
             <div data-aos="fade-right" data-aos-delay="400">
                 <h1 class="text-2xl text-gray-600 text-wrap font-extrabold mt-10">Transcribes
                     Local Language to<br> Understandable Language</h1><img src="./assets/img/phone.svg"
                     class="img-responsive mt-8 md:w-[380px]" alt="chats" srcset="" />
             </div>
-            <div class="flex ml-[180px]">
+            <div class="flex md:ml-[180px]">
                 <div data-aos="fade-left" data-aos-delay="100">
                     <h1 class="text-2xl text-gray-600 text-center text-wrap font-extrabold mt-10">Works as an emergency
                         translator<br>for Police Officials</h1><img src="./assets/img/100.svg"
@@ -111,18 +111,19 @@
         </div>
 
     </div>
-    <div id="demo_section" class="bg-black min-h-screen flex p-[120px]">
-        <div class="relative">
-            <h1 id="typewriter"
-                class="py-6 text-5xl ml-2 mt-[146px] font-black bg-clip-text text-transparent bg-gradient-to-t from-orange-700 to-orange-200">
-                Try saying anything in local Madhya Pradesh Language
+    <div id="demo_section" class="bg-black flex flex-col justify-self-center items-center h-[640px] space-y-12">
+        <div class="w-[750px] md:flex md:flex-wrap pt-8">
+            <h1 class="md:py-6 md:text-5xl text-2xl ml-2  font-black bg-clip-text text-transparent bg-gradient-to-t from-orange-700 to-orange-200">
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Try saying anything in local Madhya Pradesh Language" ]'>
+                  <span class="wrap"></span>
+                </a>
             </h1>
-
-            <div class="absolute top-[80px] -left-10"><img src="./assets/img/ellipse.svg" class="" alt="" /></div>
         </div>
+        <!-- <div class="absolute top-[80px] "><img src="./assets/img/ellipse.svg" class="" alt="" /></div> -->
         <div class="tooltip tooltip-info" data-tip="click to test"><label type="button" for="my-modal-3"
-                class=" modal-button w-full p-0 "><img src="./assets/img/mic.svg"
-                    class="tooltip w-[800px] active:invert delay-75 hover:cursor-pointer" alt=""></label></div>
+                class=" modal-button w-full md:p-0  p-8"><img src="./assets/img/mic.svg"
+                    class="tooltip  active:invert delay-75 hover:cursor-pointer animate-pulse md:w-[380px] w-[280px]" alt=""></label>
+        </div>
         <input type="checkbox" id="my-modal-3" class="modal-toggle" />
         <div class="modal">
             <div class=" flex modal-box w-11/12 max-w-5xl">
@@ -167,8 +168,9 @@
 
                     </div>
                     <!-- mic button -->
-                    <div class="flex justify-center"> 
-                        <button type="button" for="" class="hover:invert "><img src="./assets/img/smallmic.svg" alt="" class="w-[150px] active:scale-75 transition-transform"></button>
+                    <div class="flex justify-center">
+                        <button type="button" for="" class="hover:invert "><img src="./assets/img/smallmic.svg" alt=""
+                                class="w-[150px] active:scale-75 transition-transform"></button>
                     </div>
                 </div>
                 <label for="my-modal-3"
@@ -249,6 +251,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
     <script>AOS.init();</script>
+    <script src="./assets/js/typewriter.js"></script>
 </body>
 
 </html>
