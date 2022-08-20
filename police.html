@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Alert Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/Ellipse 34.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body >
+    <section id="map" class="lang-container text-white px-[20vw]">
+        <h1 class="font-bold text-xl">Police Alert Panel</h1>
+        <h1>Location of Emergency</h1>
+        <div class="flex justify-center"><iframe class="rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.734006341491!2d77.53915111488705!3d28.366890382523316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc7365a740e65%3A0xd0d60a62e55ab171!2sGalgotias%20University!5e0!3m2!1sen!2sin!4v1660989315491!5m2!1sen!2sin" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <label for=""  class="text-lg">Address</label>
+        <select name="address" id="address" class="bg-black border-1">
+            <option value="#">Galgotias University</option>
+        </select>
+    </section>
+    <section id="player" class="lang-container px-[20vw]">
+        <h1 class="text-2xl font-bold">Recorded Voice</h1>
+        <div>
+            Audio player
+        </div>
+        
+    </section>
+    <div class="">
+    <div class="lang-container px-[20vw]">
+        <div class="inner-lang-container">
+            <div class="_side">
+                <div class="detect-lang">
+                    <select name="lang" id="lang">
+                        <option value="#">Detected Languages</option>
+                        <option value="hindi">hindi</option>
+                        <option value="english">english</option>
+                        <option value="spanish">spanish</option>
+                    </select>
+                </div>
+                <div class="detect-area">
+                    <textarea class="left-detect-area" name="text-area" id="detect-area" cols="30" rows="10"
+                        placeholder="मैं एक समस्या में हूँ कृपया मेरी मदद कर"></textarea>
+                    <img src="speaker-icon.png" alt="" class="speaker-icon">
+                </div>
+            </div>
+            <div class="swap-icon" class="">
+                <div>
+                    <img src="./assets/img/cross.svg" alt="">
+                </div>
+            </div>
+            <div class="_side ">
+                <div class="detect-lang ">
+                    <select name="lang" id="lang">
+                        <option value="#">Understandable Languages</option>
+                        <option value="hindi">hindi</option>
+                        <option value="english">english</option>
+                        <option value="spanish">spanish</option>
+                    </select>
+                </div>
+                <div class="detect-area ">
+                    <textarea class="right-detect-area" name="detext-area" id="detect-area" cols="30"
+                        rows="10" placeholder="I am in a problem please help me..."></textarea>
+                    <img src="speaker-icon.png" alt="" class="speaker-icon">
+                </div>
+            </div>
+        </div>
+        <!-- mic button -->
+        <div class="flex justify-center">
+            <button type="button" for="" class="hover:invert "><img src="./assets/img/smallmic.svg" alt=""
+                    class="w-[150px] active:scale-75 transition-transform"></button>
+        </div>
+        
+    </div>
+</div>
+    <!-- <label for="my-modal-3"
+        class="btn btn-md  right-0 top-0 h-[585px] w-10 bg-gray-500 hover:bg-gray-500"><span
+            class="rotate-90">CLOSE</span>✕</label> -->
+</div>
+</body>
+</html>
