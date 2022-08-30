@@ -50,7 +50,7 @@
 
 
 
-
+/* MODAL CSS */
 
 .lang-container {
   padding: 25px;
@@ -129,6 +129,63 @@
 
 }
 
-@media only screen and (max-width: 600px) {
-  
+/* @media only screen and (max-width: 980px) {
+  .detect-lang select{
+    width: 180px;
+    height: 50px;
+    font-size: 12px;
+    padding-left: 3px ;
+  }
+  .detect-area .left-detect-area,
+  .detect-area .right-detect-area {
+    width: 180px;
+    font-size: 12px;
+  height: 130px;
+}
+.lang-container {
+  padding: 15px;
+  gap: 6px;
+}
+._side, .inner-lang-container {
+  gap: 6px;
+}
+.detect-area .left-detect-area,
+.detect-area .right-detect-area{
+  padding: 5px;
+}
+.swap-icon img {
+  margin-top: 6px;
+  width: 25px;
+  height: 25px;
+}
+} */
+@media only screen and (max-width: 750px) {
+  .detect-lang select{
+    width: 120px;
+    height: 30px;
+    font-size: 8px;
+    padding-left: 3px ;
+  }
+  .detect-area .left-detect-area,
+  .detect-area .right-detect-area {
+    width: 120px;
+    font-size: 8px;
+  height: 100px;
+}
+.lang-container {
+  padding: 15px;
+  gap: 6px;
+}
+.inner-lang-container {
+  gap: 6px;
+}
+.detect-area .left-detect-area,
+.detect-area .right-detect-area{
+  padding: 5px;
+}
+.swap-icon img {
+  margin-top: 6px;
+  width: 20px;
+  height: 20px;
+}
 }
